@@ -1,0 +1,48 @@
+.amenities,
+.reviews {
+    margin-top: 40px;
+}
+
+.amenities h2,
+.reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.amenities ul,
+.reviews ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.amenities li,
+.reviews li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.amenities li::before,
+.reviews li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF5A5F;
+}
+
+.amenities li::before {
+    background-image: url("../images/pet_icon.png");
+}
+
+.reviews h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.reviews p {
+    font-size: 12px;
+    margin-top: 5px;
+}

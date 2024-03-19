@@ -1,0 +1,53 @@
+/* styles/102-filters.css */
+
+/* Default styles */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.locations,
+.amenities {
+    flex: 1;
+    text-align: center;
+}
+
+.locations h3,
+.amenities h3 {
+    margin: 0;
+}
+
+.locations ul,
+.amenities ul {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.locations:hover ul,
+.amenities:hover ul {
+    display: block; /* Show the dropdown when hovering over the filter */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .filters {
+        flex-direction: column; /* Change to a column layout for smaller screens */
+    }
+
+    .locations,
+    .amenities {
+        width: 100%;
+    }
+
+    .search-btn {
+        margin-top: 20px; /* Adjust spacing for the search button */
+    }
+}

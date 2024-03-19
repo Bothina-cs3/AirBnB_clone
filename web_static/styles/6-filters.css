@@ -1,0 +1,52 @@
+.popover {
+    display: none;
+    position: absolute;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+
+.locations {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 10px;
+}
+
+.amenities {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 10px;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+}
+
+.locations h2 {
+    font-size: 16px;
+}
+
+.locations ul,
+.amenities ul {
+    padding-left: 0;
+}
+
+.locations ul ul {
+    padding-left: 20px;
+}
